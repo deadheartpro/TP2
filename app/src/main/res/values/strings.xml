@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TPS2</string>
+    <string name="raz">Raz</string>
+    <string name="egal">=</string>
+    <string name="quitter">Quitter</string>
+    <string name="resultat">Résultat</string>
+    <string name="moins">Moins</string>
+    <string name="multiplie">Multiplié</string>
+    <string name="divise">Divisé</string>
+    <string name="plus">Plus</string>
+    <string name="valeur">Entrez une valeur</string>
+
+
+</resources>
