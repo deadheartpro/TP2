@@ -39,29 +39,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 val2.setText("");
                 val1.setText("");
-
+                moins.setChecked(false);
+                plus.setChecked(false);
+                multiple.setChecked(false);
+                divise.setChecked(false);
             }
         });
         egal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                int r ;
+                float r ;
                 if(moins.isChecked()){
-                    r = Integer.parseInt(val1.getText().toString()) - Integer.parseInt(val2.getText().toString());
+                    r = Float.valueOf(val1.getText().toString()) - Float.valueOf(val2.getText().toString());
                     result.setText(String.valueOf(r));
                 }
                 else if(plus.isChecked()){
-                    //Toast.makeText(getApplicationContext(),"jdkjjdjdjdjdj",Toast.LENGTH_SHORT).show();
-                    r = Integer.parseInt(val1.getText().toString()) + Integer.parseInt(val2.getText().toString());
+                    r = Float.valueOf(val1.getText().toString()) + Float.valueOf(val2.getText().toString());
                     result.setText(String.valueOf(r));
                 }
                 else if(multiple.isChecked()){
-                    r = Integer.parseInt(val1.getText().toString()) * Integer.parseInt(val2.getText().toString());
+                    r = Float.valueOf(val1.getText().toString()) * Float.valueOf(val2.getText().toString());
                     result.setText(String.valueOf(r));
                 }
                 else if(divise.isChecked()){
-                    r = Integer.parseInt(val1.getText().toString()) / Integer.parseInt(val2.getText().toString());
+                    r = Float.valueOf(val1.getText().toString()) / Float.valueOf(val2.getText().toString());
                     result.setText(String.valueOf(r));
                 }
             }
