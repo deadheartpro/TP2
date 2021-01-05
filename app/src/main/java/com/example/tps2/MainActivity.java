@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 plus.setChecked(false);
                 multiple.setChecked(false);
                 divise.setChecked(false);
+                result.setText("");
             }
         });
         egal.setOnClickListener(new View.OnClickListener() {
