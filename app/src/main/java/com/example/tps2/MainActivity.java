@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 val2.setText("");
                 val1.setText("");
+
             }
         });
         egal.setOnClickListener(new View.OnClickListener() {
@@ -48,20 +49,20 @@ public class MainActivity extends AppCompatActivity {
                 int r ;
                 if(moins.isChecked()){
                     r = Integer.parseInt(val1.getText().toString()) - Integer.parseInt(val2.getText().toString());
-                    result.setText(r);
+                    result.setText(String.valueOf(r));
                 }
                 else if(plus.isChecked()){
+                    //Toast.makeText(getApplicationContext(),"jdkjjdjdjdjdj",Toast.LENGTH_SHORT).show();
                     r = Integer.parseInt(val1.getText().toString()) + Integer.parseInt(val2.getText().toString());
-                    Toast.makeText(getApplicationContext(),r,Toast.LENGTH_SHORT).show();
-                    //result.setText(r);
+                    result.setText(String.valueOf(r));
                 }
                 else if(multiple.isChecked()){
                     r = Integer.parseInt(val1.getText().toString()) * Integer.parseInt(val2.getText().toString());
-                    result.setText(r);
+                    result.setText(String.valueOf(r));
                 }
                 else if(divise.isChecked()){
                     r = Integer.parseInt(val1.getText().toString()) / Integer.parseInt(val2.getText().toString());
-                    result.setText(r);
+                    result.setText(String.valueOf(r));
                 }
             }
         });
